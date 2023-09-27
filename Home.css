@@ -922,9 +922,10 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
 /*------------  CONTAINER ----------------------*/
 
     
-@media  screen and (max-width:1200px){
+@media  (min-width:1019) and (max-width:1024px){
 
-.subheading{
-       padding-top: 70px;
-    }  
+.container-5{
+    position: absolute;
+    top:430%;
+} 
 }
