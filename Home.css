@@ -624,6 +624,26 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
     }
 }
 
+@media (min-width:430px) and (max-width:470px){
+    .project{
+        top:350%;
+    }
+    .container-3{
+        top:370%;
+    }
+    .container-4{
+        top:490%;
+    }
+
+    .container-5{
+        top:610%;
+    }
+    .f{
+        top:580%;
+    }
+}
+
+
 @media (min-width:500px) and (max-width:550px){
     .project{
         top:360%;
