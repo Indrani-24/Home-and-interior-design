@@ -111,7 +111,7 @@ img{
 
 .container-2{
     position: absolute;
-    top:160%;
+    top:110%;
     display:flex;
     justify-content: space-evenly;
     align-items:center;
@@ -185,9 +185,10 @@ h2{
 /* Our Projects*/
 .project{
     position: absolute;
-    top:250%;
+    top:170%;
     height:100px;
     width: 100%;
+    font-size: 2rem;
 }
 
 .project h1{
@@ -208,7 +209,7 @@ h2{
 
 .container-3{
     position: absolute;
-    top:285%;
+    top:200%;
     display:flex;
     justify-content: space-evenly;
     align-items:center;   
@@ -246,7 +247,7 @@ h2{
 
 .container-4{
     position: absolute;
-    top:370%;
+    top:260%;
     display:flex;
     justify-content: space-evenly;
     align-items:center;   
@@ -282,7 +283,7 @@ h2{
 /* Container - 5 */
 .container-5{
     position: absolute;
-    top:450%;
+    top:320%;
     width:100%;
     height:700px;
     background-size: cover;
@@ -357,7 +358,7 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
 .f{
     height: 55px;
     width:100%;
-    margin-top: 216%;
+    margin-top: 165%;
   }
   
   .footer ul {
@@ -597,7 +598,6 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
     .container-4{
         top:470%;
     }
-
     .container-5{
         top:580%;
     }
@@ -615,7 +615,6 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
     .container-4{
         top:420%;
     }
-
     .container-5{
         top:530%;
     }
@@ -623,7 +622,6 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
         top:520%;
     }
 }
-
 @media (min-width:430px) and (max-width:470px){
     .project{
         top:350%;
@@ -643,8 +641,7 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
     }
 }
 
-
-@media (min-width:500px) and (max-width:550px){
+@media (min-width:530px) and (max-width:550px){
     .project{
         top:360%;
     }
@@ -685,6 +682,18 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
 
 @media screen and (max-width:800px){
     /*  Nav bar */
+    ul{
+        z-index: 1;
+        position: fixed;
+        width:100%;
+        height:max-content;
+        background: black;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
     
        /*Container - 1*/
         .container-1{
@@ -692,7 +701,8 @@ box-shadow: 5px 5px 5px rgb(172, 171, 171);
         }
         img{
             height: 500px;
-            overflow: hidden;       
+            overflow: hidden;
+            position: inherit;     
         }
         .box-1{
             
