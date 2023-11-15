@@ -29,33 +29,6 @@ label.logo{
     font-weight: bold;
     font-family:'dancing script',sans-serif;
 }
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin:0 5px;
-}
-nav ul li a{
-    color:white;
-    font-size: 17px;
-    padding: 7px 13px;   
-}
-nav ul li a:hover{
-    color:white;
-    font-size: 17px;
-    padding: 7px 13px;
-    background-color: rgb(240, 6, 100);
-    box-shadow: 5px 5px rgb(163, 27, 82);
-    transition: 0.5s ease-in all;
-    
-}
-nav ul li a.active{
-    background-color: rgb(240, 6, 100);
-    box-shadow: 5px 5px rgb(163, 27, 82);
-}
 #log-out{
     height: 50px;
     width: 90px;
@@ -64,8 +37,37 @@ nav ul li a.active{
 }
 #log-out:hover{
     background-color:none;
-    box-shadow: none;
+    box-shadow:none;
 
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 23px;
+    padding: 7px 13px;
+    
+}
+nav ul li a:hover{
+    color:white;
+    padding: 7px 13px;
+    background-color: rgb(240, 6, 100);
+    box-shadow: 5px 5px rgb(163, 27, 82);
+    transition: 0.5s ease-in all;
+    text-decoration: none;   
+}
+nav ul li a.active{
+    background-color: rgb(240, 6, 100);
+    box-shadow: 5px 5px rgb(163, 27, 82);
+    color: white !important;
 }
 .checkbtn{
     font-size: 30px;
@@ -80,18 +82,20 @@ nav ul li a.active{
     display:none;
 
 }
-
+/*----------------------------- CONTAINER -1 ---------------------*/
 /*Container-1*/
 
+img{
+    width:100%;
+    height:200px;
+}
 .box-1{
     position: absolute;
-    top:2%;
+    top:0;
     float: left;
-    width: 550px;
+    width:300px;
     height:100px;
     margin: 30px;
-    /*background-color: rgb(240, 6, 100);
-    box-shadow: 15px 15px rgb(163, 27, 82);*/
     border-radius: 5px;
 }
 .head{
@@ -108,52 +112,28 @@ nav ul li a.active{
 }
 #heading-2{
     padding-top: 20px;
-    font-size: 1.5rem;   
+    font-size:1.5rem;
 }
 /*Container - 2*/
 
-
-.container-2{
-    display: flex;
-    position: absolute;
-    top:90%;
-    left:50%;
-    transform:translate(-50%,-50%); 
-    height:1050px;
-    width:100%;
-
-  
-}
-
-#profile-pic{
-    position: absolute;
-    padding-top: 110px;
-    left:50%;
-    transform:translate(-50%,-50%); 
-}
-#profile-pic img{
-    height:100px;
-    width:100px;
-    border-radius: 50%;
-    background-size: cover;
-    
-}
 
 .right{
     height:500px;
     width:700px;
     position:absolute;
-    margin-top: 400px;
-    position: absolute;
+    top:60%;
     left:50%;
     transform:translate(-50%,-50%); 
  
 }
 
 label{
-    margin: 20px;
+    padding-bottom: 14px;
+    padding-top: 20px;
+    font-size:1.5rem;
+    padding-left: -10px;
 }
-input{
+input[type=text]{
     margin: 10px;
     height: 50px;
     padding: 30px;
@@ -161,6 +141,7 @@ input{
     border: 0.1px solid rgb(169, 166, 166);
     border-radius: 8px;
     margin-right: 20px;
+    font-size: 1.3rem;
     
     
 }
@@ -170,39 +151,35 @@ input:focus{
     border: none;
 
 }
+.second-box{
+    margin-left: 50px;
+}
 #email-1{
     width: 640px;
 }
-button{
-    width:150px;
-    height: 40px;
-    font-size: 1rem;
-    margin-top: 90px;
+
+input[type=button]{
+    
+    font-size: 1.5rem;
     border: none;
+    cursor: pointer;
+    width:170px;
+    height: 60px; 
     background-color: rgb(240, 6, 100);
     color: white;
-    font-weight: bold;
-    box-shadow: 7px 7px rgb(163, 27, 82);
-        
+    margin-top: 30px;
+    margin-left: 100px;
+    padding-top:2px;
+    
+     
     }
-    button:hover{
+    input[type=button]:hover{
         background-color: black;
-        box-shadow: none;
         transition: 0.5s ease-in all;
         cursor: pointer;
     }
 
-#button-1{
-    position: absolute;
-    left:10%;
-    margin-top: 30px;
-    
-}
-#button-2{
-    position: absolute;
-    left: 53%;
-    margin-top: 30px;
-}
+
 
 
 /* Footer */
@@ -401,141 +378,137 @@ button{
   ---------------------------------------------------------------------------*/
 
 /*Responsive*/
-@media  screen and (max-width:740px){
+@media  screen and (max-width:440px){
+    .f{
+        margin-top: 330% !important;
+    }
+}
+@media  screen and (max-width:490px){
+    .f{
+        margin-top: 290% !important;
+    }
+}
+@media  (min-width:500) and (max-width:520px){
+    .f{
+        margin-top: 330% !important;
+    }
+}
+@media  (min-width:530) and (max-width:600px){
+    .f{
+        margin-top: 330% !important;
+    }
+}
 
-    .container-1{
-        overflow: hidden;
-
-    }
-    .box-1{
-        width: 300px;
-        height:50px;
-        margin: 30px;
-    }
-    .heading{
-        padding-top: 50px;
-    }
-    #heading-1{
-        position: absolute;
-        
-        font-size: 1.9rem;
-    }
-    #heading-2{
-        padding-top: 50px;
-        font-size: 1.4rem;   
-    }   
-
+@media  screen and (max-width:700px){
     /* Conatiner - 2 */
-    .container-2{
-        overflow: hidden;
-        position: absolute;
-        top:110%;
-        flex-direction: column;
-        padding-block: 20px;
  
-             
-    }
     .right{
         height:500px;
-        width:700px;
+        width: 300px;
         position:absolute;
-
+        top:60%;
+        flex-direction: column;
+        padding-block: 20px;
         position: absolute;
         left:50%;
         transform:translate(-50%,-50%); 
      
     }
+    form{
+        position: absolute;
+        left:0%;
+    }
     label{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        padding:0px;
     }
     
-    input{
+    input[type=text]{
         font-size: 1.1rem;
-        width: 400px !important;
+        width: 300px !important;
+        margin-top: 120px !important;
+        margin-left: 0%;
     }
 
     #name{
-        position: absolute;
-        left:20%;      
+        position: absolute; 
+        padding-top: 15%;  
     }
     #fname{
-        position: absolute;
-        left:20%; 
-        margin-top: 5%;
+        
+        margin-top: 23% !important;
 
     }
     #lname{
-        position: absolute;
-        left:20%; 
-        margin-top:16%;
+        margin-top:5% !important;
 
     }
     #uname{
-        position: absolute;
-        left:20%;
-        top:37%;
+        position: absolute; 
+        padding-top:8%; 
+        
     }
     #uname-1{
-        position: absolute;
-        left:20%;
-        margin-top:27%;
+        margin-top:18% !important;
     }
     #phn{
-        position: absolute;
-        left:-12%;
-        top:59%;
-
+        position: absolute; 
+        padding-top: 55%;
+        left: -75%;  
     }
     #phn-1{
-        position: absolute;
-        left:20%;
-        margin-top:43%;
+        margin-top:26% !important;
 
     }
     #email{
-        position: absolute;
-        top:83%;
-        left:20%;
-
+        position: absolute; 
+        padding-top: 5%;
     }
     #email-1{
-        position: absolute;
-        left:20%;
-        margin-top:55%;
+        margin-top:17% !important;
 
     }
     #pass{
-        position: absolute;
-        top:106%;
-        left:20%;
+        position: absolute; 
+        padding-top: 45%;
+        left: -1%;
+
 
     }
     #pass-1{
         position: absolute;
-        left:20%;
-        margin-top:69%;
-
+        top:64%; 
+        padding-top:-1% !important;
     }
     #cpass{
-        position: absolute;
-        top:130%;
-        left:-12%;
+        position: absolute; 
+        padding-top: 101%;
+        left: -79%; 
+        
     }
     #cpass-1{
-        position: absolute;
-        left:20%;
-        margin-top:87%;
-
+        margin-top:87% !important;
     }
-    #button-1{
-        position: absolute;
-        top:155%;
+    input[type=button]{
+        font-size: 1.3rem;
+        width:100px;
+    }
 
+    #button-1{
+        width: 150px !important;
+        position: absolute;
+        top:100%;
+        left:-37% !important;
     }
     #button-2{
+        width: 150px !important;
         position: absolute;
-        top:155%;
-
+        top:100%;
+        margin-left: 50%;
+    }
+   
+    .f{
+        margin-top: 230%;
     }
 }
 
@@ -546,14 +519,13 @@ button{
 
 /*----------------------------- NAVBAR   ----------------------------------*/
 
-@media(max-width:858px){
+@media screen and (max-width:840px){
 
-    /*For Responsive navbar*/
-    .logo{
-        font-size: 10px;
-
-    }
-
+    /* For Responsive navbar */
+     label.logo{
+        font-size: 2.5rem;
+        padding-left: 19px;
+     }
     .checkbtn{
         display: block;
     }
@@ -587,9 +559,8 @@ button{
         left: 0;
     }
 }
-@media  screen and (max-width:1200px){
-    /*Container - 2*/
-.subheading{
-       padding-top: 70px;
-    }  
-}
+
+
+/*------------  CONTAINER ----------------------*/
+
+    
