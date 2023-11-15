@@ -574,10 +574,10 @@ h2{
 }
 @media (min-width:430px) and (max-width:520px){
     .project{
-        top:360%;
+        top:340%;
     }
     .container-3{
-        top:380%;
+        top:360%;
     }
     .about-1 #heading{
         font-size:1.1rem !important;
@@ -592,7 +592,7 @@ h2{
     }
 
     .container-4{
-        top:520%;
+        top:505%;
     }
     .about1-image{
         margin-top: 100% !important;
@@ -601,7 +601,7 @@ h2{
     }
 
     .f{
-        top:620%;
+        top:600%;
     }
 }
 
