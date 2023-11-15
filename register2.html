@@ -48,29 +48,42 @@ span{
     }
 }
 
-@media  screen and (max-width:600px){
+@media  (min-width:410px) and (max-width:600px){
     
     .container{
         height:600px;
         width:100%;
     }
     .con-left{
-        top: 4%;
+        top: -13%;
         margin-left: 2px;
     }
-    .con-right{
-        top:23%;
-        margin-left: 80px;
-        height:520px;
-        width:410px;    
+    .con-left h1{
+        font-size:1.5rem;
     }
+    label{
+        font-size: 1.2rem !important;
+    }
+    .con-right{
+        top:15%;
+        margin-left: 60px;
+        height:800px;
+        width:410px;
+        margin-bottom: 20px;   
+    }
+    input[type=button]
+
     input[type=button]{
         margin-left: 120px;
         margin-bottom: 10px;
     }
     #font{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+    .bottom p{
+        padding-left: 30px !important;
+    }
+
     
 }
 
@@ -90,53 +103,59 @@ span{
                 <center><h1 style="color:white; padding-right: 90px;">Registration</h1></center>
                 
                 <br>
-                <label><b>Username</b></label>
+                <label>Username</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" placeholder="Username..." >
                 <br>
                 <br>
-                <label><b>Fname</b></label>
+                <label>First Name</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" placeholder="Fname" >     
                 <br> 
                 <br>        
-                <label><b>Lname</b></label>
+                <label>Last Name</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="text" placeholder="Lname"> 
                 <br> 
                 <br>           
-                <label><b>Phone No.</b></label>
+                <label>Phone No.</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="number" placeholder="Phone Number">
                 <br>
                 <br>
-                <label><b>Email Address</b></label>
+                <label>Email Address</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
                 <input type="email" placeholder="you@example.com">
                 <br> 
                 <br>              
-                <label><b>Password</b></label>
+                <label>Password</label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" placeholder="Enter 6 character or more" id="f1">
                 <br> 
                 <br>               
-                <label><b>Confirm</b></label>
-                <br>
-                <label><b>Password</b></label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Confirm Password</label>
                 <input type="password" placeholder="Re-enter your password" id="f1">
                 <br>
                 <br>
                 <br>
                <a href="Signin.html"><input type="submit" value="REGISTER"></a>
-               <p style="font-size: 16px; padding-top: -2px;color: white;"> Already have an account? <a href="Signin.html"> Login Here </a> </p>
+               <p style="font-size:20px; padding-top: -2px;color: white;" class="bottom"> Already have an account? 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="Signin.html"> Login Here </a> </p>
+
                 
             </form>
             
         </div>
     </div>
-    </div>
+
         
 </body>
 </html>
