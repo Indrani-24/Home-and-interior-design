@@ -6,7 +6,7 @@ body{
     font-family: sans-serif;
 }
 h1{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     padding-top: 10px;
     color: rgb(240, 6, 100);
     text-align: center;
@@ -26,21 +26,26 @@ form{
 }
 label{
     margin: 25px;
-    font-size: 15px;
+    font-size:1.3rem;
 }
-input{
-    margin: 25px;
-    height: 20px;
+input[type=text]{
+    margin: 15px;
+    margin-bottom: 10px !important;
+    height: 30px;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     border: 0.1px solid rgb(169, 166, 166);
     border-radius: 8px;
+    font-size: 1.2rem;
+}
+input::placeholder{
+    font-size: 1rem;
 }
 
 #button-1{
     width:130px;
     height: 40px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-top: 30px;
     margin-bottom: 30px;
     border: none;
