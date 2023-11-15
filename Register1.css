@@ -4,11 +4,14 @@
 body{
     margin:0;
     background: cover;
-    overflow: hidden;
 }
 .container{
     height:608px;
-    width:100%;
+    width:80%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
 .con-left {
@@ -21,9 +24,9 @@ body{
 }
 .con-right {
     position: absolute;
-    top: 4%;
-    width: 450px;
-    height: 550px;
+    top: -3%;
+    width: 660px;
+    height: 650px;
     border-radius: 30px;
     margin-left: 770px;
     background-color:rgb(240, 6, 100);
@@ -33,7 +36,7 @@ input[type=text],input[type=number],input[type=email], input[type=password]{
     border:none;
     color:white;
     width: 50%;
-    padding:4px 1px;
+    padding:10px 10px;
     margin-left: 30px;
     outline: none;
     font-size: 13px;
@@ -43,12 +46,12 @@ input[type=text],input[type=number],input[type=email], input[type=password]{
 input[type=submit]{
     background-color: white;
     color:black;
-    font-size: 18px;
+    font-size:20px;
     font-display: block;
     border-radius: 10px;
     width:30%;
-    height: 40px;
-    margin-left: 160px;
+    height: 50px;
+    margin-left: 35%;
     margin-bottom: 16px;
     cursor:pointer;
     user-select: none;
@@ -59,13 +62,15 @@ input[type=submit]{
 input[type=submit]:hover{
     background-color: black;
     color:white;
-    box-shadow: 5px 5px rgba(88, 2, 36, 0.904);
     transition: 0.4s ease-in all;
+}
+input::placeholder{
+    font-size: 1.1rem;
 }
 label{
     padding-left: 30px;
-    font-size: 16px;
-    font-weight: 300;
+    font-size:1.4rem;
+    
     color:white;
 }
 img{
@@ -76,12 +81,13 @@ img{
     box-shadow: 15px 15px 15px 1px rgb(163, 27, 82); ;
 }
 p{
-    font-size: 26px;
+    font-size:2.2rem;
     color:rgb(167, 6, 71);
 }
 h1{
     color:black;
 }
+
 
 
 /*responsive*/
@@ -142,7 +148,7 @@ h1{
         font-size: 24px;
     }
     p{
-        font-size: 14px;
+        font-size:20px !important;
     }
 
 
