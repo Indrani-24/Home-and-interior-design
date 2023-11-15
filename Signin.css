@@ -45,19 +45,20 @@
     }
     nav ul li a{
         color:white;
-        font-size: 17px;
+        font-size: 23px;
         padding: 7px 13px;   
     }
     nav ul li a:hover{
         color:white;
-        font-size: 17px;
         padding: 7px 13px;
         background-color: rgb(240, 6, 100);
         box-shadow: 5px 5px rgb(163, 27, 82);
         transition: 0.5s ease-in all;
+        text-decoration: none;
         
     }
     nav ul li a.active{
+        color: white !important;
         background-color: rgb(240, 6, 100);
         box-shadow: 5px 5px rgb(163, 27, 82);
     }
@@ -99,6 +100,7 @@
     ::placeholder{
         color:rgba(215, 212, 212, 0.7);
     }
+    
     input[type=email], input[type=password]{
         border:none;
         color:white;
@@ -137,7 +139,7 @@
         p{
             color: white;
             padding-left: 60px;
-            font-size: 15px;
+            font-size:1.3rem;
             font-weight:200;
         }
         h1{
@@ -146,7 +148,8 @@
         }
         .highlight{
             color: black;
-            font-size: 16px;
+            font-size:1.2rem;
+            font-weight: bold;
         }
 
 
@@ -341,6 +344,37 @@
       
     
     /*responsive*/
+    @media  (min-width:490px) and (max-width:700px){
+        img{
+            overflow: hidden;
+            height: 700px !important;
+        }
+        .login{
+            margin-left: 15px;
+            height:590px !important;
+            width:480px !important;
+            position : absolute ;
+            top :45% !important; 
+            left :20% !important;
+            
+        }
+        input[type=email], input[type=password]{
+       
+            width: 70%;
+            padding:4px 8px;
+            margin-top:-5px;
+            margin-left: 60px;
+            outline: none;
+            font-size: 16px;
+            border-bottom:2px solid white ;
+            background: transparent;
+        }
+        label{
+            padding: 10px;
+        }
+        
+    
+    }
 
     @media  screen and (max-width:858px){
         img{
@@ -399,19 +433,4 @@
     }  
 }
 
-    @media  screen and (max-width:600px){
-        img{
-            overflow: hidden;
-            height: 600px;
-        }
-        .login{
-            margin-left: 15px;
-            height:500px;
-            width:430px;
-            position : absolute ;
-            top :70% ; 
-            left : 47%; 
-            transform:translate(-50%,-50%);
-        }
-    
-    }
+   
